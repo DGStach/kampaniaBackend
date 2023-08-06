@@ -8,7 +8,7 @@ export const getAll = () => {
 export const create = (product) => {
     product.id = uuidv4()
     products.push(product);
-    return products
+    return product
 }
 
 export const update = (id, product) => {
@@ -26,7 +26,4 @@ export const remove = (id) => {
             products.splice(index,1)
         }
     })
-    console.log("id", id)
-    console.log("products", products)
-    return products
 }
