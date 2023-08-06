@@ -1,7 +1,4 @@
-
-export const mockProducts = (req,res) =>{
-
-let mockProductsList = [
+export const products = [
     {
         id: "874f0d37-07a0-4ae0-a613-929c17e7b668",
         name: "CAMPAIGN 1",
@@ -40,6 +37,3 @@ let mockProductsList = [
         includeInBudget: true
     }
 ]
-    res.header(`Access-Control-Allow-Origin`, `*`);
-    res.send(mockProductsList)
-}
