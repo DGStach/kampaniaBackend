@@ -40,5 +40,6 @@ let mockProductsList = [
         includeInBudget: true
     }
 ]
+    res.header(`Access-Control-Allow-Origin`, `*`);
     res.send(mockProductsList)
 }

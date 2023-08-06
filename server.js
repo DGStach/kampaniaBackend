@@ -1,10 +1,9 @@
 import cors from 'cors';
 import express from 'express';
-const app = express()
 import {mockProducts} from "./controllers/mockProducts.js";
 
+const app = express()
 app.use(cors())
-
 app.get("/", (req,res)=>res.send('API Running'))
 app.get("/mockProducts", mockProducts);
 
