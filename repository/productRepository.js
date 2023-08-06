@@ -8,20 +8,25 @@ export const getAll = () => {
 export const create = (product) => {
     product.id = uuidv4()
     products.push(product);
+    return products
 }
 
 export const update = (id, product) => {
-    products.forEach((el, index) => {
+    products.forEach((el, index) =>{
         if (el.id === id) {
             products[index] = product;
         }
     })
-
+    return product
 }
+
 export const remove = (id) => {
     products.forEach((el, index) => {
         if (el.id === id) {
-            allproducts.splice(index,1)
+            products.splice(index,1)
         }
     })
+    console.log("id", id)
+    console.log("products", products)
+    return products
 }
