@@ -2,7 +2,7 @@ import {products} from "./products.js";
 import {v4 as uuidv4} from 'uuid';
 
 export const getAll = () => {
-    return products
+return (products)
 }
 
 export const create = (product) => {
@@ -26,4 +26,5 @@ export const remove = (id) => {
             products.splice(index,1)
         }
     })
+    return (products)
 }

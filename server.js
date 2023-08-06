@@ -9,8 +9,6 @@ app.post("/products", (req, res)=>res.send(create(req.body)).status(201))
 app.put("/products/:id", (req,res)=>res.send(update(req.params.id,req.body)));
 app.delete("/products/:id", (req, res)=>res.send(remove(req.params.id)).status(204))
 
-
-
 const PORT = process.env.PORT || 5000;
 console.log('port to start: ', PORT)
 app.listen(PORT, () => console.log(`Server Started ${PORT}`));
